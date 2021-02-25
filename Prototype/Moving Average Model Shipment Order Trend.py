@@ -1,7 +1,7 @@
 import pandas as pd
 
 #Import dataset
-df = pd.read_csv(r"C:\Users\Tharuka\Downloads\Forecasting Resources (ST Academy)\Data + Code\delivery.csv", header = 0, parse_dates = [0])
+df = pd.read_csv(r"delivery.csv", header = 0, parse_dates = [0])
 
 df['t'] = df['CNT'].shift(1)
 df.head()
